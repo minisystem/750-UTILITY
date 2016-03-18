@@ -2028,7 +2028,7 @@
   )
 
   (module MyModules:3MM-LED-C1A2 (layer F.Cu) (tedit 554B781B) (tstamp 56EBCA8F)
-    (at 105 26)
+    (at 148.5011 105.0036)
     (path /56F2E384)
     (fp_text reference D17 (at 0 -2.5) (layer F.SilkS)
       (effects (font (size 0.8128 0.8128) (thickness 0.15)))
@@ -2057,7 +2057,7 @@
   )
 
   (module MyModules:3MM-LED-C1A2 (layer F.Cu) (tedit 554B781B) (tstamp 56EBCA9E)
-    (at 105 31)
+    (at 148.5011 105.0036)
     (path /56F2E38A)
     (fp_text reference D18 (at 0 -2.5) (layer F.SilkS)
       (effects (font (size 0.8128 0.8128) (thickness 0.15)))
@@ -2086,7 +2086,7 @@
   )
 
   (module MyModules:3MM-LED-C1A2 (layer F.Cu) (tedit 554B781B) (tstamp 56EBCAAD)
-    (at 105 36)
+    (at 148.5011 105.0036)
     (path /56F2E390)
     (fp_text reference D19 (at 0 -2.5) (layer F.SilkS)
       (effects (font (size 0.8128 0.8128) (thickness 0.15)))
@@ -2115,7 +2115,7 @@
   )
 
   (module MyModules:3MM-LED-C1A2 (layer F.Cu) (tedit 554B781B) (tstamp 56EBCABC)
-    (at 105 41)
+    (at 148.5011 105.0036)
     (path /56F2E396)
     (fp_text reference D20 (at 0 -2.5) (layer F.SilkS)
       (effects (font (size 0.8128 0.8128) (thickness 0.15)))
