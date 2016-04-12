@@ -1498,7 +1498,7 @@ Wire Wire Line
 Wire Wire Line
 	10150 3700 10150 4750
 Wire Wire Line
-	9750 3700 12500 3700
+	9750 3700 12550 3700
 Wire Wire Line
 	9350 3350 8825 3350
 Connection ~ 8825 3700
@@ -1680,8 +1680,6 @@ Text GLabel 15250 3050 0    50   Input ~ 0
 SAMPLE
 Wire Wire Line
 	15250 3050 15400 3050
-Text Label 12500 3700 0    60   ~ 0
-S&H_INT_CLK
 Wire Wire Line
 	12500 2800 12500 2900
 Connection ~ 12500 2900
@@ -1691,8 +1689,6 @@ Wire Wire Line
 	13175 2525 13175 2625
 Text Notes 11625 2800 0    60   ~ 0
 S&H EXT CLK
-Text GLabel 12525 5050 2    50   Output ~ 0
-S&H_TRI
 Text GLabel 17825 7350 0    50   Input ~ 0
 LFO_TRI
 Wire Wire Line
@@ -1781,17 +1777,11 @@ NoConn ~ 28425 3275
 Wire Wire Line
 	28050 3125 28425 3125
 Wire Wire Line
-	11775 5050 12100 5050
-Text GLabel 22775 4200 0    50   Input ~ 0
-S&H_TRI
-Wire Wire Line
 	22775 3475 23025 3475
 Wire Wire Line
 	23025 3475 23025 4200
 Wire Wire Line
 	23025 4200 22775 4200
-Text Notes 22400 4350 0    60   ~ 0
-SECRET S&H TRI OUTPUT
 $Comp
 L GND_E #PWR050
 U 1 1 56EE020B
@@ -3989,19 +3979,6 @@ Wire Wire Line
 	11325 10125 11325 10275
 Connection ~ 10800 10750
 $Comp
-L R_US R77
-U 1 1 56FF4969
-P 12300 5050
-F 0 "R77" V 12380 5050 50  0000 C CNN
-F 1 "1K" V 12220 5050 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 12300 5050 60  0001 C CNN
-F 3 "" H 12300 5050 60  0000 C CNN
-	1    12300 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	12525 5050 12500 5050
-$Comp
 L DIODE D8
 U 1 1 56FFBBD3
 P 12675 10025
@@ -5327,10 +5304,8 @@ Wire Wire Line
 Wire Wire Line
 	6825 2600 6825 3175
 Connection ~ 6825 3075
-Text GLabel 6925 2700 2    50   Output ~ 0
+Text GLabel 6950 2700 2    50   Output ~ 0
 WHITE_NOISE
-Wire Wire Line
-	6925 2700 6825 2700
 $Comp
 L R_US R20
 U 1 1 56EF8369
@@ -6117,10 +6092,10 @@ SHORT R109 to prevent \nvoltage drop with >1 \noutputs connected?
 Wire Notes Line
 	27850 3250 27850 3775
 $Comp
-L GND_E #PWR?
+L GND_E #PWR0165
 U 1 1 570C8DBC
 P 27400 9250
-F 0 "#PWR?" V 27400 9250 30  0001 C CNN
+F 0 "#PWR0165" V 27400 9250 30  0001 C CNN
 F 1 "GND_E" H 27400 9180 30  0001 C CNN
 F 2 "" H 27400 9250 60  0000 C CNN
 F 3 "" H 27400 9250 60  0000 C CNN
@@ -6135,4 +6110,13 @@ Wire Wire Line
 Wire Wire Line
 	27800 9175 27800 8825
 Connection ~ 27400 9175
+Text Notes 22400 4350 0    60   ~ 0
+SECRET S&H SLEW PULSE
+Text GLabel 12550 3700 2    50   Output ~ 0
+S&H_INT_CLK
+Connection ~ 12500 3700
+Text GLabel 22775 4200 0    50   Input ~ 0
+S&H_INT_CLK
+Wire Wire Line
+	6825 2700 6950 2700
 $EndSCHEMATC
