@@ -6097,4 +6097,6 @@ Text GLabel 22775 4200 0    50   Input ~ 0
 S&H_INT_CLK
 Wire Wire Line
 	6825 2700 6950 2700
+Text Notes 10150 13600 2    60   ~ 0
+*double check\nQ14 footprint
 $EndSCHEMATC
