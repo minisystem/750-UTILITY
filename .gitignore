@@ -1,0 +1,10 @@
+#.gitignore 750 LFO/S&H/NOISE/SLEW
+
+
+
+_autosave*
+*.wrl
+*.bak
+/Panel/*.bak
+/Panel/*.ems
+

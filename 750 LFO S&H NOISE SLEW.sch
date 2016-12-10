@@ -875,17 +875,6 @@ F 3 "" H 17200 4575 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_US R95
-U 1 1 56E5AFAE
-P 19150 4275
-F 0 "R95" V 19230 4275 50  0000 C CNN
-F 1 "2.7K" V 19070 4275 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 19150 4275 60  0001 C CNN
-F 3 "" H 19150 4275 60  0000 C CNN
-	1    19150 4275
-	-1   0    0    1   
-$EndComp
-$Comp
 L R_US R94
 U 1 1 56E5AFAF
 P 19150 3800
@@ -918,7 +907,7 @@ F 3 "" H 19150 4475 60  0000 C CNN
 	1    19150 4475
 	1    0    0    -1  
 $EndComp
-Text Notes 18150 4100 0    50   ~ 0
+Text Notes 18100 4025 0    50   ~ 0
 This offsets the 200 mV \nFET pedestal voltage
 Text Notes 15950 2150 0    50   ~ 0
 Ian Fritz Super Sampe & Hold\nhttp://ijfritz.byethost4.com/super_sh_rand_web.pdf
@@ -1445,7 +1434,7 @@ Wire Wire Line
 Wire Wire Line
 	18875 3150 18950 3150
 Wire Wire Line
-	19475 3350 19475 4025
+	19475 4025 19475 3350
 Wire Wire Line
 	19350 3150 19475 3150
 Wire Wire Line
@@ -1511,7 +1500,7 @@ Wire Wire Line
 Wire Wire Line
 	19150 4000 19150 4075
 Wire Wire Line
-	19475 4025 19150 4025
+	19000 4025 19475 4025
 Connection ~ 19150 4025
 Wire Wire Line
 	12300 1950 12150 1950
@@ -1667,8 +1656,6 @@ Wire Wire Line
 	13175 2525 13175 2625
 Text Notes 11625 2800 0    60   ~ 0
 S&H EXT CLK
-Text GLabel 17825 7350 0    50   Input ~ 0
-LFO_TRI
 Wire Wire Line
 	17825 7350 17925 7350
 Text GLabel 17825 7450 0    50   Input ~ 0
@@ -1678,32 +1665,31 @@ Wire Wire Line
 $Comp
 L JACK_MONO_SW J7
 U 1 1 56EB6CEA
-P 16000 7700
-F 0 "J7" H 15450 7600 60  0000 C CNN
-F 1 "JACK_MONO_SW" H 15750 7900 60  0000 C CNN
-F 2 "MyModules:PJ-301B-JACK-SLOTS" H 15900 7700 60  0001 C CNN
-F 3 "" H 15900 7700 60  0000 C CNN
-	1    16000 7700
+P 15625 7700
+F 0 "J7" H 15075 7600 60  0000 C CNN
+F 1 "JACK_MONO_SW" H 15375 7900 60  0000 C CNN
+F 2 "MyModules:PJ-301B-JACK-SLOTS" H 15525 7700 60  0001 C CNN
+F 3 "" H 15525 7700 60  0000 C CNN
+	1    15625 7700
 	1    0    0    1   
 $EndComp
-NoConn ~ 16250 7700
 Wire Wire Line
-	16250 7550 17925 7550
+	15875 7550 17925 7550
 Text Notes 15300 7500 0    60   ~ 0
 S&H_EXT_SAMPLE
 $Comp
 L GND_E #PWR048
 U 1 1 56EB92FC
-P 16250 8075
-F 0 "#PWR048" V 16250 8075 30  0001 C CNN
-F 1 "GND_E" H 16250 8005 30  0001 C CNN
-F 2 "" H 16250 8075 60  0000 C CNN
-F 3 "" H 16250 8075 60  0000 C CNN
-	1    16250 8075
+P 15875 8025
+F 0 "#PWR048" V 15875 8025 30  0001 C CNN
+F 1 "GND_E" H 15875 7955 30  0001 C CNN
+F 2 "" H 15875 8025 60  0000 C CNN
+F 3 "" H 15875 8025 60  0000 C CNN
+	1    15875 8025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16250 7850 16250 8075
+	15875 7850 15875 8025
 $Comp
 L R_US R96
 U 1 1 56EBBFB9
@@ -6143,10 +6129,6 @@ Wire Wire Line
 	4500 7400 4500 8175
 Text Notes 4775 7250 0    60   ~ 0
 MISSING\nIN v1.0
-Text Notes 12200 6875 0    60   ~ 0
-Needs buffering\nbefore going into S&H\n
-Text Notes 5000 2100 0    60   ~ 0
-This noise circuit is dumb. Use TR-808 white/pink noise
 Text Notes 5575 5350 0    60   ~ 0
 Need op amp output impedence\nhere. BJT output buffer is not good\nfor input to S&H
 Text Notes 14450 3050 0    60   ~ 0
@@ -6155,6 +6137,86 @@ Text Notes 15175 4475 0    60   ~ 0
 Will TS321 work\nhere?
 Text Notes 6050 9700 0    60   ~ 0
 THIS IS PNP\nIDIOT!
-Text Notes 16375 7750 0    60   ~ 0
+Text Notes 16850 7750 0    60   ~ 0
 INPUT PROTECTION\nDIODES HERE?
+Text GLabel 16050 7825 2    50   Input ~ 0
+LFO
+Wire Wire Line
+	15875 7700 16000 7700
+Wire Wire Line
+	16000 7700 16000 7825
+Wire Wire Line
+	16000 7825 16050 7825
+Text Notes 15575 8525 0    60   ~ 0
+Normalize to selectable\nLFO output - allows \nselection of sine or\npulse
+Wire Notes Line
+	16625 8000 16625 8175
+Text Notes 18725 4725 0    50   ~ 0
+trimmer here to adjust \npedistal voltage precisely
+$Comp
+L DIODE D?
+U 1 1 584C5070
+P 16475 7325
+F 0 "D?" H 16475 7425 40  0000 C CNN
+F 1 "1N4148" H 16475 7225 40  0000 C CNN
+F 2 "MyModules:SOD323-JRL" H 16475 7325 60  0001 C CNN
+F 3 "~" H 16475 7325 60  0000 C CNN
+	1    16475 7325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D?
+U 1 1 584C8738
+P 16475 7775
+F 0 "D?" H 16475 7875 40  0000 C CNN
+F 1 "1N4148" H 16475 7675 40  0000 C CNN
+F 2 "MyModules:SOD323-JRL" H 16475 7775 60  0001 C CNN
+F 3 "~" H 16475 7775 60  0000 C CNN
+	1    16475 7775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16475 7525 16475 7575
+Connection ~ 16475 7550
+$Comp
+L +12V #PWR?
+U 1 1 584C99C5
+P 16475 7125
+F 0 "#PWR?" H 16475 6975 50  0001 C CNN
+F 1 "+12V" H 16475 7265 50  0000 C CNN
+F 2 "" H 16475 7125 60  0000 C CNN
+F 3 "" H 16475 7125 60  0000 C CNN
+	1    16475 7125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 584CAEE5
+P 16475 7975
+F 0 "#PWR?" H 16475 8075 30  0001 C CNN
+F 1 "-12V" H 16475 8125 60  0000 C CNN
+F 2 "~" H 16475 7975 60  0000 C CNN
+F 3 "~" H 16475 7975 60  0000 C CNN
+	1    16475 7975
+	-1   0    0    1   
+$EndComp
+Text GLabel 17825 7350 0    50   Input ~ 0
+LFO_SINE
+$Comp
+L POT_US VR?
+U 1 1 584ECB44
+P 19150 4275
+F 0 "VR?" H 19225 4475 50  0000 C CNN
+F 1 "5K" H 19025 4475 50  0000 C CNN
+F 2 "MyModules:Bourns_3362P" H 19150 4275 60  0001 C CNN
+F 3 "" H 19150 4275 60  0000 C CNN
+	1    19150 4275
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	19000 4025 19000 4275
+Text Notes 12850 5450 0    50   ~ 0
+add TL072 to handle S&H buffering\nand also bias and scale S&H clock to SLEW?
+Text Notes 2025 8650 0    60   ~ 0
+BIAS down further\nfor lower min freq?
 $EndSCHEMATC
