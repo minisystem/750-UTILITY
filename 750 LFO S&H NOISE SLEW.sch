@@ -5736,8 +5736,6 @@ Wire Wire Line
 Wire Wire Line
 	9900 8425 9900 8375
 Connection ~ 9900 8375
-Text Notes 9500 8900 0    60   ~ 0
-MISSING\nIN v1.0
 $Comp
 L R_US R2
 U 1 1 584EAFFF
@@ -5753,8 +5751,6 @@ Wire Wire Line
 	4500 6875 4500 7000
 Wire Wire Line
 	4500 7400 4500 8175
-Text Notes 4775 7250 0    60   ~ 0
-MISSING\nIN v1.0
 Text Notes 14450 3050 0    60   ~ 0
 OR, need input buffer \nfor S&H
 Text Notes 15175 4475 0    60   ~ 0
