@@ -4314,7 +4314,7 @@ F 1 "4.7K" H 5775 13250 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 5600 13275 60  0001 C CNN
 F 3 "" H 5600 13275 60  0000 C CNN
 	1    5600 13275
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L -12V #PWR54
@@ -4341,7 +4341,7 @@ U 1 1 57059639
 P 6075 12700
 F 0 "C27" H 6125 12800 50  0000 L CNN
 F 1 "4.7μ" H 6125 12600 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_4x5.3" H 6075 12700 60  0001 C CNN
+F 2 "MyModules:SM0805-HAND" H 6075 12700 60  0001 C CNN
 F 3 "" H 6075 12700 60  0000 C CNN
 	1    6075 12700
 	1    0    0    -1  
@@ -6103,4 +6103,6 @@ Connection ~ 14350 3150
 Wire Wire Line
 	16025 1825 16025 3050
 Connection ~ 16025 3050
+Text Notes 5750 13225 0    60   ~ 0
+Change C27 to\nNP ceramic
 $EndSCHEMATC
