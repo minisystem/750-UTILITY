@@ -4416,7 +4416,7 @@ F 1 "1meg" V 5150 12300 50  0000 C CNN
 F 2 "MyModules:RV16A-41-JRL" H 5200 12000 60  0001 C CNN
 F 3 "" H 5200 12000 60  0000 C CNN
 	1    5200 12000
-	0    1    -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5200 12200 5200 12350
