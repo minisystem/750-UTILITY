@@ -3,7 +3,7 @@
   (general
     (links 497)
     (no_connects 0)
-    (area 59.924999 24.924999 125.075001 131.575001)
+    (area 51.198809 22.45604 126.9493 132.325001)
     (thickness 1.6)
     (drawings 942)
     (tracks 1907)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.35)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.35)
     (user_trace_width 0.6)
@@ -68,8 +68,8 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFF77F)
     (pcbplotparams
-      (layerselection 0x01420_00000000)
-      (usegerberextensions false)
+      (layerselection 0x010f0_80000001)
+      (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -86,12 +86,12 @@
       (plotvalue false)
       (plotinvisibletext false)
       (padsonsilk false)
-      (subtractmaskfromsilk false)
-      (outputformat 3)
+      (subtractmaskfromsilk true)
+      (outputformat 1)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Panel/))
+      (outputdirectory Gerbers/))
   )
 
   (net 0 "")
@@ -4396,7 +4396,7 @@
     (at 73.5 70)
     (path /56E5AEDA)
     (attr smd)
-    (fp_text reference R55 (at 0 1.4) (layer B.SilkS)
+    (fp_text reference R55 (at 0.55 1.45) (layer B.SilkS)
       (effects (font (size 0.6096 0.6096) (thickness 0.1524)) (justify mirror))
     )
     (fp_text value 150K (at 0 0) (layer B.SilkS) hide
