@@ -3464,7 +3464,7 @@ L R_US R25
 U 1 1 56FB92E3
 P 5100 9600
 F 0 "R25" H 5225 9650 50  0000 C CNN
-F 1 "10K" H 5275 9575 50  0000 C CNN
+F 1 "22K" H 5275 9575 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 5100 9600 60  0001 C CNN
 F 3 "" H 5100 9600 60  0000 C CNN
 	1    5100 9600
@@ -6167,4 +6167,6 @@ Wire Wire Line
 Wire Wire Line
 	21425 3850 20625 3850
 Connection ~ 20625 3850
+Text Notes 3925 9450 0    60   ~ 0
+Adjust R25 to 22K\nfor reliable retriggering\nwith 5V gate
 $EndSCHEMATC
