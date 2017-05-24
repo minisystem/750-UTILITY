@@ -2777,7 +2777,7 @@ L R_US R8
 U 1 1 56F4D612
 P 2525 8050
 F 0 "R8" H 2650 8100 50  0000 C CNN
-F 1 "150K" H 2700 8025 50  0000 C CNN
+F 1 "120K" H 2700 8025 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 2525 8050 60  0001 C CNN
 F 3 "" H 2525 8050 60  0000 C CNN
 	1    2525 8050
@@ -4021,7 +4021,7 @@ L R_US R72
 U 1 1 5702342E
 P 11900 6950
 F 0 "R72" V 11980 6950 50  0000 C CNN
-F 1 "330K" V 11820 6950 50  0000 C CNN
+F 1 "150K" V 11820 6950 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 11900 6950 60  0001 C CNN
 F 3 "" H 11900 6950 60  0000 C CNN
 	1    11900 6950
@@ -5812,8 +5812,8 @@ F 3 "" H 19300 4275 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	19150 4025 19150 4275
-Text Notes 2025 8650 0    60   ~ 0
-BIAS down further\nfor lower min freq?
+Text Notes 2100 8750 0    60   ~ 0
+Changed R8 to 120K\nGives 100 mHz as\nlowest LFO rate
 Text Notes 12500 4375 0    50   ~ 0
 S&H TRI OUT
 Wire Wire Line
@@ -5858,7 +5858,7 @@ L R_US R1
 U 1 1 5852A7F7
 P 3375 6550
 F 0 "R1" V 3455 6550 50  0000 C CNN
-F 1 "270K" V 3295 6550 50  0000 C CNN
+F 1 "220K" V 3295 6550 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 3375 6550 60  0001 C CNN
 F 3 "" H 3375 6550 60  0000 C CNN
 	1    3375 6550
@@ -5889,7 +5889,7 @@ H
 Text Notes 2350 6350 0    60   ~ 0
 RANGE
 Text Notes 5275 11900 0    60   ~ 0
-LIN or LOG?\nI think LIN
+LOG
 Wire Wire Line
 	6825 2700 6825 3175
 Wire Wire Line
@@ -6169,4 +6169,6 @@ Wire Wire Line
 Connection ~ 20625 3850
 Text Notes 3925 9450 0    60   ~ 0
 Adjust R25 to 22K\nfor reliable retriggering\nwith 5V gate
+Text Notes 11550 6800 0    60   ~ 0
+Reduce R72 to 150K\nto get 10Vpp TRI \noutput
 $EndSCHEMATC
