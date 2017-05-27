@@ -6300,4 +6300,6 @@ Wire Wire Line
 Wire Wire Line
 	12725 2275 12500 2275
 Connection ~ 12500 2275
+Text Notes 29400 20050 0    200  ~ 40
+SYSTEM80 INC. 2017
 $EndSCHEMATC
