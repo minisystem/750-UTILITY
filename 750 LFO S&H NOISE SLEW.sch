@@ -5456,8 +5456,6 @@ Wire Notes Line
 	6825 14150 6825 13975
 Wire Notes Line
 	6825 13975 6550 13975
-Text Notes 29375 20675 0    200  ~ 40
-850 LFO S&H NOISE SLEW
 $Comp
 L MBT3946DW Q5
 U 1 1 5701EDA2
@@ -5752,7 +5750,7 @@ $EndComp
 Wire Wire Line
 	19150 4025 19150 4275
 Text Notes 2100 8750 0    60   ~ 0
-Changed R8 to 120K\nGives 100 mHz as\nlowest LFO rate
+Changed R8 to 120K\nGives 50 mHz as\nlowest LFO rate
 Text Notes 12500 4375 0    50   ~ 0
 S&H TRI OUT
 Wire Wire Line
@@ -6274,7 +6272,7 @@ L C_US C2
 U 1 1 592EC277
 P 12725 2475
 F 0 "C2" H 12600 2550 50  0000 L CNN
-F 1 "1000p" H 12450 2350 50  0000 L CNN
+F 1 "1n" H 12600 2350 50  0000 L CNN
 F 2 "MyModules:SM0603-C-JRL" H 12725 2475 60  0001 C CNN
 F 3 "" H 12725 2475 60  0000 C CNN
 	1    12725 2475
@@ -6300,6 +6298,14 @@ Wire Wire Line
 Wire Wire Line
 	12725 2275 12500 2275
 Connection ~ 12500 2275
-Text Notes 29400 20050 0    200  ~ 40
+Text Notes 31075 21100 0    150  ~ 0
 SYSTEM80 INC. 2017
+Text Notes 32900 21375 0    60   ~ 0
+1.4
+Text Notes 30425 21375 0    60   ~ 0
+1.4
+Text Notes 29375 20675 0    150  ~ 30
+'850' modulation/noise source
+Text Notes 29700 21225 0    60   ~ 0
+LFO, S&H, NOISE, SLEW EURORACK MODULE
 $EndSCHEMATC
