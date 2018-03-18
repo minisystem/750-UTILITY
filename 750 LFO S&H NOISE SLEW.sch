@@ -6301,9 +6301,9 @@ Connection ~ 12500 2275
 Text Notes 31075 21100 0    150  ~ 0
 SYSTEM80 INC. 2017
 Text Notes 32900 21375 0    60   ~ 0
-1.4
+1.5
 Text Notes 30425 21375 0    60   ~ 0
-1.4
+03/18/2018
 Text Notes 29375 20675 0    150  ~ 30
 '850' modulation/noise source
 Text Notes 29700 21225 0    60   ~ 0
